@@ -1,5 +1,3 @@
-using System.Text.RegularExpressions;
-
 namespace DSA.Problems.Arrays;
 
 public static class FindClosestNumber
@@ -20,7 +18,7 @@ public static class FindClosestNumber
             int targetNumber = 0;
             return nums.FindDistance(targetNumber)
                 .Select(x => (x, Math.Abs(x)))
-                .OrderBy(x => x.Item2 )
+                .OrderBy(x => x.Item2)
                 .ThenByDescending(x => x.Item1)
                 .FirstOrDefault().Item1;
         }

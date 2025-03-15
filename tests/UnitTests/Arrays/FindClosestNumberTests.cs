@@ -19,24 +19,22 @@ public class FindClosestNumberTests
     
     public static IEnumerable<object[]> TestCases()
     {
-        yield return new object[]
-        {
+        yield return
+        [
             new int[] { -4,-2,1,4,8 },
-            1  
-        };
+            1
+        ];
 
-        yield return new object[]
-        {
+        yield return
+        [
             new int[] {2,-1,1}, 
             1
-        };
+        ];
         
-        yield return new object[]
-        {
+        yield return
+        [
             new int[] {-100000,-100000}, 
             -100000
-        };
-        
-        
+        ];
     }
 }
